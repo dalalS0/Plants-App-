@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="389dp"
+                    android:layout_height="110dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="6dp"
+                    app:cardElevation="3px"
+                    android:outlineAmbientShadowColor="#F3F3F3"
+                    android:outlineSpotShadowColor="#F3F3F3"
+                    android:layout_marginRight="7dp"
+                    >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/img"
+                                    app:cardCornerRadius="10dp"
+                                    android:layout_width="115dp"
+                                    android:layout_height="99dp"
+                                    android:layout_marginLeft="14dp"
+                                    android:layout_marginRight="12dp"
+                                    android:padding="11dp"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/plant" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    >
+
+                                        <TextView
+
+                                            android:id="@+id/name"
+                                            android:layout_width="wrap_content"
+                                            android:layout_gravity="left"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="sans-serif-medium"
+                                            android:text="lavender"
+                                            android:layout_marginTop="9dp"
+                                            android:textColor="#000"
+                                            android:textSize="17dp" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="left"
+                                            android:orientation="horizontal">
+                                                <TextView
+                                                    android:id="@+id/disc"
+                                                    android:layout_width="174dp"
+                                                    android:layout_height="33dp"
+                                                    android:text=""
+                                                    android:textColor="#515151"
+                                                    android:textSize="13dp" />
+
+
+
+
+                                        </LinearLayout>
+                                        <ImageView
+                                            android:id="@+id/favBtn"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginRight="24dp"
+                                            android:layout_gravity="right"
+                                            android:background="@drawable/heart2"
+/>
+
+                                </LinearLayout>
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFFFE"
+    tools:context=".Mainpage">
+
+  <LinearLayout
+      android:id="@+id/layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="77dp"
+      android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="199dp">
+
+  <ImageView
+      android:id="@+id/myImageView"
+      android:layout_width="match_parent"
+      android:layout_height="207dp"
+      android:scaleType="fitXY"
+      android:src="@drawable/pp5"/>
+
+    <TextView
+        android:id="@+id/myImageViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/myImageView"
+        android:layout_alignTop="@id/myImageView"
+        android:layout_alignRight="@id/myImageView"
+        android:layout_alignBottom="@id/myImageView"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text="My Plants"
+        android:textColor="#6D9419"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/myImageViewText"
+        android:layout_alignTop="@id/myImageViewText"
+        android:layout_alignRight="@id/myImageViewText"
+        android:layout_alignBottom="@id/myImageViewText"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="hope u enjoy and get the benfit of ues that app"
+        android:textColor="#ffff"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:textColor="@color/white"
+        android:gravity="right"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:elevation="0dp"
+        android:translationZ="3dp">
+
+    <EditText
+        android:id="@+id/Search"
+        android:layout_width="374dp"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:drawableRight="@drawable/baseline_search_24"
+        android:paddingLeft="17dp"
+        android:layout_marginTop="2dp"
+        android:paddingRight="32dp"
+        android:backgroundTint="@color/white"
+        android:hint="Search" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+  </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+            android:elevation="3dp"
+
+            android:translationZ="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="18dp">
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:menu="@menu/menu_bottom"
+                android:backgroundTint="@color/white"
+                android:fitsSystemWindows="true"
+                app:itemRippleColor="@color/transparent"
+                app:itemIconSize="30dp"
+                app:itemIconTint="@color/color_item_bonv"
+                app:itemTextColor="@color/color_item_bonv"/>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Nature"
+            android:textColor="#97B182"
+            android:textSize="33dp"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold"            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="316dp"
+            android:layout_height="49dp"
+            android:background="@drawable/shapedit"
+            android:elevation="3dp"
+            android:hint="Email"
+            android:layout_marginTop="9dp"
+            android:padding="13dp" />
+
+        <EditText
+
+            android:id="@+id/etPassword"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapedit"
+            android:elevation="3dp"
+            android:hint="Password"
+            android:layout_marginTop="9dp"
+            android:inputType="textPassword"
+            android:padding="13dp" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:text="Login"
+            android:textSize="18dp"
+            android:textColor="#292929"
+            android:elevation="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:backgroundTint="#C8E4B2"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="316dp"
+            android:layout_height="55dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/RegisterLink"
+            android:layout_width="wrap_content"
+            android:text="Don't have an account? "
+            android:textSize="15dp"
+            android:textColor="#6E6E6E"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvRegisterLink"
+            android:layout_width="wrap_content"
+            android:text=" Sing Up "
+            android:textSize="15dp"
+            android:textColor="#9DB887"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:text="if you forget your password"
+            android:textSize="15dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#9DB887"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+            android:id="@+id/msgCheck"
+            android:layout_width="302dp"
+            android:text="You have to verify your email address first"
+            android:textSize="14dp"
+                android:layout_marginTop="12dp"
+            android:textColor="#DCD52619"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/msgError"
+            android:layout_width="302dp"
+            android:text="The email or the password is wrong"
+            android:textSize="14dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#DCD52619"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Emailempty"
+            android:layout_width="302dp"
+            android:text="Email is Empty!"
+            android:textSize="14dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#DCD52619"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/PassEmpty"
+            android:layout_width="302dp"
+            android:text="Password is Empty!"
+            android:textSize="14dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#DCD52619"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/PassLength"
+            android:layout_width="302dp"
+            android:text="Password length must be greater then 6 letter"
+            android:textSize="14dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#DCD52619"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/proBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:scaleX=".5"
+            android:progressTint="#889A66"
+            android:scaleY=".5"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/miHome"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/spider_plant" />
+
+    <item android:id="@+id/myPlants"
+        app:showAsAction="ifRoom"
+        android:title="My Plants"
+        android:icon="@drawable/watering_plants" />
+
+
+    <item android:id="@+id/Watering"
+        android:title="Watering"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/water_drop"
+/>
+
+</menu>
